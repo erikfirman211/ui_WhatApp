@@ -114,14 +114,18 @@ class ChatsPage extends StatelessWidget {
             scrollDirection: Axis.vertical,
             itemCount: 20,
             itemBuilder: (context, index) {
-              return ListTile(
-                leading: CircleAvatar(
-                  backgroundImage: NetworkImage(
-                    "https://picsum.photos/id/77${index}/200/200",
+              return TextButton(
+                style: TextButton.styleFrom(padding: EdgeInsets.all(0)),
+                onPressed: () {},
+                child: ListTile(
+                  leading: CircleAvatar(
+                    backgroundImage: NetworkImage(
+                      "https://picsum.photos/id/77${index}/200/200",
+                    ),
                   ),
+                  title: Text("Name - $index"),
+                  subtitle: Text("Haii nama ku erik"),
                 ),
-                title: Text("Name - $index"),
-                subtitle: Text("Haii nama ku erik"),
               );
             },
           ),

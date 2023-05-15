@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_ui/Pages/Chats_Page.dart';
+import 'package:whatsapp_ui/Pages/Status_Page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -13,7 +14,7 @@ class _HomePageState extends State<HomePage> {
 
   List showWidget = [
     ChatsPage(),
-    Center(child: Text("Status")),
+    Status_Page(),
     Center(child: Text("Calls")),
     Center(child: Text("Calls"))
   ];

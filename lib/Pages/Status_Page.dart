@@ -53,7 +53,7 @@ class Status_Page extends StatelessWidget {
         ),
         Expanded(
           child: ListView.builder(
-            itemCount: 10,
+            itemCount: 100,
             scrollDirection: Axis.vertical,
             itemBuilder: (context, index) {
               if (index < 1) {
@@ -152,7 +152,7 @@ class Status_Page extends StatelessWidget {
                         "https://picsum.photos/id/77${index}/200/200",
                       ),
                     ),
-                    title: Text("Name $index"),
+                    title: Text("Name ${index + 0}"),
                     subtitle: Text("12.00"),
                   ),
                 );

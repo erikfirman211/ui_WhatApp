@@ -47,6 +47,32 @@ class _ChatsPageState extends State<ChatsPage> {
             ],
           ),
         ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+          child: TextField(
+            autocorrect: true,
+            keyboardType: TextInputType.name,
+            decoration: InputDecoration(
+              prefixIcon: Icon(Icons.search),
+              prefixStyle: TextStyle(
+                fontSize: 12,
+              ),
+              contentPadding: EdgeInsets.symmetric(
+                vertical: 2,
+                horizontal: 20,
+              ),
+              label: Text(
+                "Search",
+                style: TextStyle(
+                  fontSize: 14,
+                ),
+              ),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(25),
+              ),
+            ),
+          ),
+        ),
         Expanded(
           child: ListView.builder(
             scrollDirection: Axis.vertical,
@@ -87,7 +113,7 @@ class _ChatsPageState extends State<ChatsPage> {
                                   borderRadius: BorderRadius.circular(50),
                                   image: DecorationImage(
                                     image: NetworkImage(
-                                        "https://picsum.photos/id/77${index}/200/200"),
+                                        "https://picsum.photos/id/777${index}/200/200"),
                                   ),
                                 ),
                                 padding: EdgeInsets.all(30),
@@ -96,33 +122,6 @@ class _ChatsPageState extends State<ChatsPage> {
                           ),
                         ),
                       ],
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 10, vertical: 10),
-                      child: TextField(
-                        autocorrect: true,
-                        keyboardType: TextInputType.name,
-                        decoration: InputDecoration(
-                          prefixIcon: Icon(Icons.search),
-                          prefixStyle: TextStyle(
-                            fontSize: 12,
-                          ),
-                          contentPadding: EdgeInsets.symmetric(
-                            vertical: 2,
-                            horizontal: 20,
-                          ),
-                          label: Text(
-                            "Search",
-                            style: TextStyle(
-                              fontSize: 14,
-                            ),
-                          ),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(25),
-                          ),
-                        ),
-                      ),
                     ),
                   ],
                 );
@@ -139,7 +138,7 @@ class _ChatsPageState extends State<ChatsPage> {
                   child: ListTile(
                     leading: CircleAvatar(
                       backgroundImage: NetworkImage(
-                        "https://picsum.photos/id/77${index}/200/200",
+                        "https://picsum.photos/id/444${index}/200/200",
                       ),
                     ),
                     title: Text("Name - $index"),
